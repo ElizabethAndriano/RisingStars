@@ -9,7 +9,7 @@ Un Rising Star es aquel investigador que ha demostrado un gran potencial para co
 # Pronóstico de desempeño
 ## Correlación entre predictores
 
-<iframe src="Figures/heatmap.html" height="400" width="900"></iframe>
+<iframe src="Figures/heatmap.html"></iframe>
 
 ## Modelos de regresión
 Se realizaron 6 modelos con las siguientes características para predecir el h-index y el h-index ponderado
@@ -25,3 +25,10 @@ Comparación de score para cada modelo de h-index
 
 Comparación de score para cada modelo de h-index ponderado
 
+# Clasificación de Rising Stars
+
+# Clustering
+<iframe src="Figures/clustering.html"></iframe>
+
+# Clustering con normalización de variables
+<iframe src="Figures/clustering.html"></iframe>
