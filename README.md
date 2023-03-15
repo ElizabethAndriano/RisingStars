@@ -31,7 +31,7 @@ Comparación de score para cada modelo de h-index ponderado
 <iframe src="Figures/clustering.html" height="500" width="700"></iframe>
 
 ### Clustering con normalización de variables
-<iframe src="Figures/clustering_std.html" height="500" width="700"></iframe>
+<iframe src="Figures/clustering-std.html" height="500" width="700"></iframe>
 
 Se prefiere el primer modelo porque tiene un cluster que encapsula la mayoria de las variables en su valores más altos
 
