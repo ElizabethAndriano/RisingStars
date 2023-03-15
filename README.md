@@ -6,9 +6,22 @@ Un Rising Star es aquel investigador que ha demostrado un gran potencial para co
 * Generar un pronóstico del desempeño de un investigador
 * Identificar el perfil de un investigador de alto rendimiento (Rising Star)
 
-# Modelos de regresión
+# Pronóstico de desempeño
 ## Correlación entre predictores
 
 <iframe src="Figures/heatmap.html" height="400" width="900"></iframe>
- 
+
+## Modelos de regresión
+Se realizaron 6 modelos con las siguientes características para predecir el h-index y el h-index ponderado
+
+* Regresión lineal Ordinary Least Squares (OLS)
+* Regresión lineal con sklearn
+* Regresión polinomial con OLS
+* Regresión polinomial con kNN
+* Regresión con Árbol de decisión
+* Regresión con Random Forest
+
+Comparación de score para cada modelo de h-index
+
+Comparación de score para cada modelo de h-index ponderado
 
