@@ -36,3 +36,7 @@ Comparación de score para cada modelo de h-index ponderado
 Se prefiere el primer modelo porque tiene un cluster que encapsula la mayoria de las variables en su valores más altos
 
 ## Clasificación con kNN
+
+<iframe src="Figures/cm3.html" height="500" width="700"></iframe>
+<iframe src="Figures/cm5.html" height="500" width="700"></iframe>
+<iframe src="Figures/cm7.html" height="500" width="700"></iframe>
