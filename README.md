@@ -12,7 +12,7 @@ Un Rising Star es aquel investigador que ha demostrado un gran potencial para co
 * H-INDEX: Productividad académica y el impacto de la investigación de un autor o científico
 
 # Preprocesamiento de datos
-Este proceso se puede encontrar en "merge_db.ipynb". Después de unificar las bases de datos presentadas en un solo archivo y limpiar los autores, se tiene registro de 136,109 investigadores únicos.
+Este proceso se puede encontrar en `merge_db.ipynb`. Después de unificar las bases de datos presentadas en un solo archivo y limpiar los autores, se tiene registro de 136,109 investigadores únicos.
 
 # Pronóstico de desempeño
 ## Correlación entre predictores
