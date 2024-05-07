@@ -6,6 +6,14 @@ Un Rising Star es aquel investigador que ha demostrado un gran potencial para co
 * Generar un pronóstico del desempeño de un investigador
 * Identificar el perfil de un investigador de alto rendimiento (Rising Star)
 
+# Métricas relevantes
+* CITE SCORE: Promedio anual de citas de los artículos publicados
+* SNIP: Impacto de las citas ponderando en un área determinada.
+* H-INDEX: Productividad académica y el impacto de la investigación de un autor o científico
+
+# Preprocesamiento de datos
+Este proceso se puede encontrar en "merge_db.ipynb". Después de unificar las bases de datos presentadas en un solo archivo y limpiar los autores, se tiene registro de 136,109 investigadores únicos.
+
 # Pronóstico de desempeño
 ## Correlación entre predictores
 
@@ -21,19 +29,39 @@ Se realizaron 6 modelos con las siguientes características para predecir el h-i
 * Regresión con Árbol de decisión
 * Regresión con Random Forest
 
-Comparación de score para cada modelo de h-index
+### Mejores modelos para h-index
 
-Comparación de score para cada modelo de h-index ponderado
+|                | Adjusted $R^2$ | Score Train | Score Test |
+| -------------- | -------------- | ----------- | ---------- | 
+| Polinomial OLS | 0.910          | -           | -          | 
+| kNN            | -              | 0.961       | 0.928      |
+| Random Forest  | -              | 0.940       | 0.923      |
+
+### Mejores modelos para h-index ponderado
+
+|                | Adjusted $R^2$ | Score Train | Score Test |
+| -------------- | -------------- | ----------- | ---------- | 
+| Polinomial OLS | 0.719          | -           | -          | 
+| kNN            | -              | 0.924       | 0.874      |
+| Random Forest  | -              | 0.900       | 0.890      |
 
 # Clasificación de Rising Stars
 
 ### Clustering
 <iframe src="Figures/clustering.html" height="500" width="700"></iframe>
 
-### Clustering con normalización de variables
-<iframe src="Figures/clustering-std.html" height="500" width="700"></iframe>
+| Cluster Index | Clasificación        |
+| ------------- | -------------------- |
+| 0             | Not Rising Star      |
+| 1             | Rising Star          |
+| 2             | Not Rising Star      |
+| 3             | Not Rising Star      |
+| 4             | Possible Rising Star |
 
-Se prefiere el primer modelo porque tiene un cluster que encapsula la mayoria de las variables en su valores más altos
+Los grupos quedan conformados de la siguiente forma:
+* **Rising Star**: 0.1%
+* **Possible Rising Star**: 2%
+* **Not Rising Star**: 97.9%
 
 ## Clasificación con kNN
 
